@@ -24,7 +24,7 @@ std::vector<Result> DichotomySearcher::search() const{
         float x2 = intervalFirst + l/2 + _delta;
         float fx1 = _func(x1);
         float fx2 = _func(x2);
-        
+
         resultVec.emplace_back(Result(
                     intervalFirst, intervalSecond,
                     x1, x2,
