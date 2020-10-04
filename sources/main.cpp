@@ -11,13 +11,13 @@ int main(int argc, char** argv){
     cout << "The function is: func(x) = -0.5*cos(0.5x) - 0.5" << endl << endl;
     cout << endl << "\t\t\tPASSIVE SEARCHER" << endl;
     cout << "===========================================================" << endl;
-    PassiveSearcher ps(1, 4);
+    PassiveSearcher ps(-5, 2);
     ps.print();
 
     cout << endl << endl << endl << "\t\t\t\t\tDICHOTOMY SEARCHER" << endl;
     cout << "========================================================";
     cout << "===================================================" << endl;
-    DichotomySearcher ds(1, 4);
+    DichotomySearcher ds(-5, 2);
     ds.print();
     return 0;
 }

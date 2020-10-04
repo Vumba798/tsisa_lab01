@@ -10,10 +10,10 @@ using std::setw;
 using std::setfill;
 
 std::vector<std::pair<float, float>> PassiveSearcher::search() const{
-    float l;
-    size_t N = 1;
+    float l; // l - interval of uncertainty
+    size_t N = 1; // N - amount of points
 
-    // first is a value, second is an _interval of uncertainty
+    // first is a value, second is an interval of uncertainty
     std::vector<std::pair<float, float>> minElementVec;
 
     do{
